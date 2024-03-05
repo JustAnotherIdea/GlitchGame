@@ -13,6 +13,12 @@ const config = {
     width: sizes.width,
     height: sizes.height,
     canvas: gameCanvas,
+    physics:{
+        default:"arcade",
+        arcade:{
+          debug:true,
+        }
+    },
     scene: [Game]
 }
 
