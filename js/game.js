@@ -20,22 +20,30 @@ class Game extends Phaser.Scene{
     }
 
     create(){
-        const map = this.make.tilemap({key: "map1"});
-        const tileset = map.addTilesetImage("Rustic Indoor", "indoorTiles");
+        const map = this.make.tilemap({key: "mapTown"});
+        const tileset = map.addTilesetImage("magecity", "mageCity");
         const layer1 = map.createLayer("Tile Layer 1", tileset, 0, 0);
         const layer2 = map.createLayer("Tile Layer 2", tileset, 0, 0);
         const layer3 = map.createLayer("Tile Layer 3", tileset, 0, 0);
         this.sys.animatedTiles.init(map);
 
         this.cursor = this.input.keyboard.createCursorKeys();
-
-        this.player = new GlitchSprite(this, 300, 300, "plant");
-
+        
+        this.player = new GlitchSprite(this, 300, 300, "bookshelf1");
+        
         this.player.playGlitch();
 
-        const test = new GlitchSprite(this, 300, 300, "plant");
+        this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
+        this.cameras.main.startFollow(this.player.sprite);
 
-        test.playGlitch();
+        const house1 = new GlitchSprite(this,64 + (352/2), 64 + (320/2), "house1");
+        const house2 = new GlitchSprite(this,64 + (544/2), 352 + (512/2), "house2");
+        const house3 = new GlitchSprite(this,1664 + (192/2), 64 + (288/2), "house3");
+        const house4 = new GlitchSprite(this,1440 + (416/2), 544 + (352/2), "house4");
+        const house5 = new GlitchSprite(this,768 + (736/2), 160 + (608/2), "house5");
+
+        house1.playGlitch();
+        house2.playGlitch();
 
     }
                 

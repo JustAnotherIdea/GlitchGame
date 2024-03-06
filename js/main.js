@@ -4,8 +4,8 @@ import Game from './game';
 
 const sizes =
 {
-    width: 768,
-    height: 768
+    width: window.innerWidth,
+    height: window.innerHeight
 };
 
 const config = {
