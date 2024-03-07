@@ -1,7 +1,7 @@
 import Phaser from "phaser";
 
 class GlitchSprite{
-    constructor(scene, x, y, texture){
+    constructor(scene, x, y, texture, collisionX, collisionY, offsetCollisionX, offsetCollisionY, collideWithPlayer){
         this.scene = scene;
         this.x = x;
         this.y = y;
@@ -18,8 +18,14 @@ class GlitchSprite{
             },
             scene.anims.create(this.animationConfig);
         }
+        this.sprite.depth = this.y;
+        if(collideWithPlayer){
+            this.sprite.setSize(collisionX,collisionY).setOffset(offsetCollisionX,this.sprite.height-collisionY-offsetCollisionY);
+            this.sprite.setImmovable(true);
+            this.scene.physics.add.collider(this.scene.player.sprite, this.sprite);
+        }
     }
-
+    
     playGlitch(){
         this.sprite.play(`${this.sprite.texture.key}Glitch`);
     }

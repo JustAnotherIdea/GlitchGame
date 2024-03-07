@@ -12,7 +12,6 @@
     "vite": "^5.1.4"
   },
   "dependencies": {
-    "phaser": "^3.80.1",
-    "phaser-animated-tiles": "^2.0.2"
+    "phaser": "^3.80.1"
   }
 }

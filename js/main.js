@@ -1,6 +1,7 @@
 import '/css/style.css'
 import Phaser from 'phaser'
-import Game from './game';
+import StartScene from './startScene';
+import TownScene from './sceneTown';
 
 const sizes =
 {
@@ -19,7 +20,7 @@ const config = {
           debug:true,
         }
     },
-    scene: [Game]
+    scene: [ TownScene]
 }
 
 const game = new Phaser.Game(config);

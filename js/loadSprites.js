@@ -18,7 +18,7 @@ const loadSprites = (scene) => {
     scene.load.spritesheet("candles5", "/sprites/candles5Sprite.png", {frameWidth: 32, frameHeight: 64});
     scene.load.spritesheet("clothTable", "/sprites/clothTableSprite.png", {frameWidth: 96, frameHeight: 64});
     scene.load.spritesheet("floatingBook", "/sprites/floatingBookSprite.png", {frameWidth: 32, frameHeight: 64});
-    scene.load.spritesheet("plant", "/sprites/plantSprite.png", {frameWidth: 32, frameHeight: 64});
+    scene.load.spritesheet("plant1", "/sprites/plantSprite.png", {frameWidth: 32, frameHeight: 64});
     scene.load.spritesheet("skulls1", "/sprites/skulls1Sprite.png", {frameWidth: 32, frameHeight: 32});
     scene.load.spritesheet("skulls2", "/sprites/skulls2Sprite.png", {frameWidth: 32, frameHeight: 32});
     scene.load.spritesheet("woodTable", "/sprites/woodTableSprite.png", {frameWidth: 96, frameHeight: 64});
@@ -28,6 +28,26 @@ const loadSprites = (scene) => {
     scene.load.spritesheet("house3", "/sprites/house3Sprite.png", {frameWidth: 192, frameHeight: 288});
     scene.load.spritesheet("house4", "/sprites/house4Sprite.png", {frameWidth: 416, frameHeight: 352});
     scene.load.spritesheet("house5", "/sprites/house5Sprite.png", {frameWidth: 736, frameHeight: 608});
+    scene.load.spritesheet("barrel1", "/sprites/barrel.png", {frameWidth: 32, frameHeight: 32});
+    scene.load.spritesheet("barrel2", "/sprites/barrel2.png", {frameWidth: 32, frameHeight: 64});
+    scene.load.spritesheet("bench", "/sprites/bench.png", {frameWidth: 64, frameHeight: 64});
+    scene.load.spritesheet("box", "/sprites/box.png", {frameWidth: 32, frameHeight: 32});
+    scene.load.spritesheet("fountain", "/sprites/fountain.png", {frameWidth: 64, frameHeight: 64});
+    scene.load.spritesheet("lamp", "/sprites/lamp.png", {frameWidth: 32, frameHeight: 32});
+    scene.load.spritesheet("pillar1", "/sprites/pillar.png", {frameWidth: 32, frameHeight: 64});
+    scene.load.spritesheet("pillar2", "/sprites/pillar2.png", {frameWidth: 32, frameHeight: 64});
+    scene.load.spritesheet("plant2", "/sprites/plant2.png", {frameWidth: 32, frameHeight: 32});
+    scene.load.spritesheet("plant3", "/sprites/plant3.png", {frameWidth: 32, frameHeight: 64});
+    scene.load.spritesheet("plant4", "/sprites/plant4.png", {frameWidth: 64, frameHeight: 64});
+    scene.load.spritesheet("plant5", "/sprites/plant5.png", {frameWidth: 32, frameHeight: 64});
+    scene.load.spritesheet("potOnBox", "/sprites/potOnBox.png", {frameWidth: 32, frameHeight: 32});
+    scene.load.spritesheet("seat", "/sprites/seat.png", {frameWidth: 32, frameHeight: 32});
+    scene.load.spritesheet("statue", "/sprites/statue.png", {frameWidth: 32, frameHeight: 96});
+    scene.load.spritesheet("table", "/sprites/table.png", {frameWidth: 64, frameHeight: 64});
+    scene.load.spritesheet("tree1", "/sprites/tree.png", {frameWidth: 32, frameHeight: 96});
+    scene.load.spritesheet("tree2", "/sprites/tree2.png", {frameWidth: 64, frameHeight: 128});
+    scene.load.spritesheet("tree3", "/sprites/tree3.png", {frameWidth: 128, frameHeight: 160});
+    scene.load.spritesheet("door", "/sprites/door.png", {frameWidth: 32, frameHeight: 64});
 }
 
 export default loadSprites;
