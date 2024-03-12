@@ -49,14 +49,14 @@ const sceneUtils = {
     
         scene.sys.setVisible(false);
     
-        scene.cursor = scene.input.keyboard.addKeys({ up: 'W', left: 'A', down: 'S', right: 'D' });
+        scene.cursor = scene.input.keyboard.addKeys({ up: 'W', left: 'A', down: 'S', right: 'D', interact: 'E' });
         
     
-        scene.player.sprite.setSize(26,18).setOffset(scene.player.sprite.width/10+2,35);
+        // scene.player.sprite.setSize(26,18).setOffset(scene.player.sprite.width/10+2,35);
     
         scene.physics.add.collider(scene.player.sprite, scene.collisionLayer);
         
-        scene.player.playGlitch();
+        scene.player.toggleGlitchAnim();
     
         scene.cameras.main.setBounds(0, 0, scene.map.widthInPixels, scene.map.heightInPixels);
         scene.cameras.main.startFollow(scene.player.sprite);

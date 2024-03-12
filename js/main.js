@@ -3,6 +3,7 @@ import Phaser from 'phaser'
 import StartScene from './startScene';
 import TownScene from './sceneTown';
 import House1Scene from './sceneHouse1';
+import uiScene from './uiScene';
 
 const sizes =
 {
@@ -18,10 +19,10 @@ const config = {
     physics:{
         default:"arcade",
         arcade:{
-          debug:false,
+          debug:true,
         }
     },
-    scene: [StartScene, TownScene, House1Scene]
+    scene: [uiScene, StartScene, TownScene, House1Scene]
 }
 
 const game = new Phaser.Game(config);

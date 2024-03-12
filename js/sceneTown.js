@@ -19,7 +19,9 @@ class TownScene extends Phaser.Scene{
         this.layer2;
         this.layer3;
         this.collisionLayer;
-        this.mapLoaded = false;
+        this.interactToggle = false;
+        this.collidedObject;
+        this.objects = [];
     }
     
     preload(){

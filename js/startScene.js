@@ -48,8 +48,8 @@ class StartScene extends Phaser.Scene{
                 // }
                 this.sys.setActive(false);
                 this.sys.setVisible(false);
-                this.scene.get("TownScene").sys.setActive(true);
-                this.scene.get("TownScene").sys.setVisible(true);
+                this.scene.get("House1Scene").sys.setActive(true);
+                this.scene.get("House1Scene").sys.setVisible(true);
             });
         // });
     }
